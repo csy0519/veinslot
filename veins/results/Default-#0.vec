@@ -1,0 +1,154 @@
+version 2
+run Default-0-20220526-21:29:20-9604
+attr configname Default
+attr datetime 20220526-21:29:20
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network RSUExampleScenario
+attr processid 9604
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.debug false
+param **.coreDebug false
+param *.playgroundSizeX 1500m
+param *.playgroundSizeY 1500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"intersection.launchd.xml\")"
+param *.manager.moduleType "\"vtype0=org.car2x.veins.nodes.Car vtype1=org.car2x.veins.nodes.Human\""
+param *.manager.moduleName "\"vtype0=node vtype1=human\""
+param *.manager.moduleDisplayString "\"vtype0='i=veins/node/car;is=vs' vtype1='i=veins/node/pedestrian;is=vs'\""
+param *.rsu[0].mobility.x 1000
+param *.rsu[0].mobility.y 1000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 1000m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.sensitivity -89dBm
+param *.**.nic.phy80211p.useThermalNoise true
+param *.**.nic.phy80211p.thermalNoise -110dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].applType "\"MyVeinsApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.human[*].applType "\"MyVeinsApp\""
+param *.human[*].appl.headerLength "80 bit"
+param *.human[*].appl.sendBeacons false
+param *.human[*].appl.dataOnSch false
+param *.human[*].appl.beaconInterval 1s
+param *.node[*].veinsmobilityType.debug true
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 1.895
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 75s
+param *.node[*0].veinsmobility.accidentDuration 50s
+param *.human[*].veinsmobilityType.debug true
+param *.human[*].veinsmobility.x 0
+param *.human[*].veinsmobility.y 0
+param *.human[*].veinsmobility.z 1.895
+param *.human[*0].veinsmobility.accidentCount 0
+param *.human[*0].veinsmobility.accidentStart 75s
+param *.human[*0].veinsmobility.accidentDuration 50s
+
+vector 0 RSUExampleScenario.node[0].veinsmobility posx ETV
+vector 1 RSUExampleScenario.node[0].veinsmobility posy ETV
+vector 2 RSUExampleScenario.node[1].veinsmobility posx ETV
+vector 3 RSUExampleScenario.node[1].veinsmobility posy ETV
+vector 4 RSUExampleScenario.node[2].veinsmobility posx ETV
+vector 5 RSUExampleScenario.node[2].veinsmobility posy ETV
+vector 6 RSUExampleScenario.node[3].veinsmobility posx ETV
+vector 7 RSUExampleScenario.node[3].veinsmobility posy ETV
+vector 8 RSUExampleScenario.human[4].veinsmobility posx ETV
+vector 9 RSUExampleScenario.human[4].veinsmobility posy ETV
+vector 10 RSUExampleScenario.node[0].veinsmobility speed ETV
+vector 11 RSUExampleScenario.node[1].veinsmobility speed ETV
+vector 12 RSUExampleScenario.node[2].veinsmobility speed ETV
+vector 13 RSUExampleScenario.node[3].veinsmobility speed ETV
+vector 14 RSUExampleScenario.human[4].veinsmobility speed ETV
+vector 15 RSUExampleScenario.node[0].veinsmobility acceleration ETV
+vector 16 RSUExampleScenario.node[0].veinsmobility co2emission ETV
+vector 17 RSUExampleScenario.node[1].veinsmobility acceleration ETV
+vector 18 RSUExampleScenario.node[1].veinsmobility co2emission ETV
+vector 19 RSUExampleScenario.node[2].veinsmobility acceleration ETV
+vector 20 RSUExampleScenario.node[2].veinsmobility co2emission ETV
+vector 21 RSUExampleScenario.node[3].veinsmobility acceleration ETV
+vector 22 RSUExampleScenario.node[3].veinsmobility co2emission ETV
+vector 23 RSUExampleScenario.human[4].veinsmobility acceleration ETV
+vector 24 RSUExampleScenario.human[4].veinsmobility co2emission ETV
+16	332	3	4.0648974903409
+15	332	3	1.861723109039
+10	167	2	4.0464192465398
+10	332	3	5.9081423555788
+1	2	1	629.95
+1	167	2	629.95
+1	332	3	629.95
+0	2	1	30.171952842018
+0	167	2	30.171952842018
+0	332	3	33.365594728834
+18	332	3	4.2678456985113
+17	332	3	1.9795925850072
+11	167	2	3.9941787712366
+11	332	3	5.9737713562438
+3	2	1	620.05
+3	167	2	620.05
+3	332	3	620.05
+2	2	1	1219.8731462977
+2	167	2	1219.8731462977
+2	332	3	1216.8262375826
+20	332	3	4.6252861564291
+19	332	3	2.1419103421131
+12	167	2	4.0472028129978
+12	332	3	6.1891131551109
+5	2	1	1219.8202314695
+5	167	2	1219.8202314695
+5	332	3	1216.6346684972
+4	2	1	629.95
+4	167	2	629.95
+4	332	3	629.95
+22	332	3	4.1504052873357
+21	332	3	1.9110373959667
+13	167	2	4.0265946209607
+13	332	3	5.9376320169274
+7	2	1	30.160215893112
+7	167	2	30.160215893112
+7	332	3	33.257793951327
+6	2	1	620.05
+6	167	2	620.05
+6	332	3	620.05
+24	332	3	1.1552172201985
+23	332	3	-0.058924518075539
+14	167	2	1.3810396222648
+14	332	3	1.3221151041893
+9	2	1	674.09996184733
+9	167	2	674.09996184733
+9	332	3	672.74794898252
+8	2	1	326.65
+8	167	2	326.65
+8	332	3	326.65
+
